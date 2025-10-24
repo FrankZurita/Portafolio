@@ -1,0 +1,10 @@
+name: Revision de PR
+
+on: [pull_request]
+
+jobs:
+    limt:
+        runs-on: ubuntu-lastet
+        steps:
+          - uses: actions/checkout@v4
+          - run: npx prettier --check .
